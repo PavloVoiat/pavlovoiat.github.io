@@ -1,0 +1,9 @@
+@import url('main.css');
+
+@import url('pages/pavoLife.css');
+@import url('pages/pavoGames.css');
+@import url('pages/pavoHobbies.css');
+@import url('pages/pavoStudy.css');
+@import url('pages/pavoAbout.css');
+
+@import url('articles/stylesHomepageArticles.css');
