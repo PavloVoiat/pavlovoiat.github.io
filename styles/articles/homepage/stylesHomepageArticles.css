@@ -1,0 +1,160 @@
+/* Стили для страниц статей */
+.article-container {
+    padding: 30px 0;
+}
+
+.full-article {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+    color: #fff;
+}
+
+.full-article h1 {
+    color: #ffcc00;
+    margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.article-meta {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.full-article h2 {
+    color: #ffcc00;
+    margin: 25px 0 15px;
+    font-size: 1.5em;
+}
+
+.full-article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article-tags {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.article-tags span {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/* Стили для страниц тегов */
+.tag-page .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.tag-header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #111;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(255, 204, 0, 0.2);
+}
+
+.tag-header h2 {
+    color: #ffcc00;
+    margin-top: 0;
+}
+
+.tag-header p {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Анимации */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); }
+}
+
+.highlight-card {
+    animation: glow 3s infinite;
+}
+
+/* Дополнительные стили для социальных иконок */
+.social-icons a i {
+    margin-right: 5px;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+}
+
+/* Стили для кнопок */
+button, .read-more {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-2px);
+}
+
+.read-more:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+}
+
+/* Адаптивные стили для статей */
+@media (max-width: 768px) {
+    .full-article {
+        padding: 20px;
+    }
+    
+    .full-article h1 {
+        font-size: 1.5em;
+    }
+    
+    .full-article h2 {
+        font-size: 1.3em;
+    }
+    
+    .article-container {
+        padding: 15px 0;
+    }
+}
+
+/* Стили для изображений в статьях */
+.article-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для цитат */
+blockquote {
+    border-left: 4px solid #ffcc00;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Стили для списков в статьях */
+.full-article ul, 
+.full-article ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.full-article li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
