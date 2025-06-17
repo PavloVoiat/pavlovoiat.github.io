@@ -1,2 +1,0 @@
-# PaVo
-PaVo Site project
