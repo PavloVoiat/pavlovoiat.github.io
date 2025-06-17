@@ -1,0 +1,205 @@
+/* Общие стили статей */
+.full-article {
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+    margin-bottom: 40px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.article-header {
+    padding: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.article-header h1 {
+    color: #ffcc00;
+    margin-top: 0;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.category-badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Стили для разных категорий */
+.life-badge { background: #4a6fa5; }
+.psychology-badge { background: #9c6fad; }
+.finance-badge { background: #5a9c6f; }
+
+.article-hero {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 0 30px 30px;
+    line-height: 1.6;
+}
+
+.article-content h2 {
+    color: #ffcc00;
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.article-content h3 {
+    color: #ffcc00;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* Блоки с советами */
+.tip-box {
+    background: rgba(255, 204, 0, 0.1);
+    border-left: 3px solid #ffcc00;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.article-image {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.image-caption {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* Подвал статьи */
+.article-footer {
+    padding: 20px 30px;
+    border-top: 1px solid #333;
+}
+
+.article-tags {
+    margin-bottom: 15px;
+}
+
+.article-tags span {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Стили для финансовых статей */
+.money-disclaimer {
+    background: rgba(255, 100, 100, 0.1);
+    border-left: 3px solid #ff6464;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+}
+
+.money-stats {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Сетка принципов */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.principle-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.principle-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ffcc00;
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.budget-chart{
+  height: auto-fit;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gold;
+}
+
+.divbudgetchart{
+  display: flex;
+  justify-content: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .article-header {
+        padding: 20px;
+    }
+    
+    .article-content {
+        padding: 0 20px 20px;
+    }
+    
+    .article-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .money-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
