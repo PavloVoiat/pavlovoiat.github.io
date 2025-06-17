@@ -1,0 +1,383 @@
+/*Стили для раздела "Игры"*/
+
+/* Основные стили раздела */
+.bodygames{ background-color: black; }
+
+.games-main {
+    margin-top: 15px;
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.games-banner {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('../img/games/banner-bg.jpeg') center/cover;
+    border-radius: 8px;
+}
+
+.games-banner h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.games-banner p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Фильтры */
+.games-filters {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-group span {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.filter-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    background: #444;
+}
+
+input[name="platform"]:checked + label.filter-btn {
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Сетка игр */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.game-card {
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255,204,0,0.1);
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px; /* Фиксированная высота */
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.game-info {
+    padding: 15px;
+}
+
+.game-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.game-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+}
+
+.platform {
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.platform.pc { background: #007acc; }
+.platform.playstation { background: #003087; }
+.platform.xbox { background: #107c10; }
+.platform.mobile { background: #ff2d55; }
+
+.genre {
+    color: #aaa;
+    font-style: italic;
+}
+
+.game-card p {
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.game-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffcc00;
+    color: #000;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    z-index: 2;
+    border: 2px solid #000;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Блок "Скоро выйдет" */
+.upcoming {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+}
+
+.upcoming h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upcoming h2 .icon {
+    font-size: 1.5em;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.upcoming-card {
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.upcoming-card:hover {
+    transform: translateY(-5px);
+}
+
+.upcoming-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.upcoming-info {
+    padding: 15px;
+}
+
+.upcoming-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+.release-date {
+    color: #ffcc00;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+}
+
+.btn.outline:hover {
+    background: rgba(255,204,0,0.1);
+}
+
+/* Фильтрация через CSS */
+#pc:checked ~ .games-grid .game-card:not(.pc),
+#playstation:checked ~ .games-grid .game-card:not(.playstation),
+#xbox:checked ~ .games-grid .game-card:not(.xbox),
+#mobile:checked ~ .games-grid .game-card:not(.mobile) {
+    display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .games-filters {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-card img {
+        height: 200px;
+    }
+}
+
+/* Стили для фильтра жанров */
+.genre-filter {
+    position: relative;
+    display: inline-block;
+    min-width: 150px;
+}
+
+.genre-filter summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background: #333;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.genre-filter summary:hover {
+    background: #3a3a3a;
+}
+
+/* Убираем стандартный маркер */
+.genre-filter summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Кастомная стрелка */
+.genre-filter summary::after {
+    content: "▼";
+    font-size: 0.7rem;
+    color: #ffcc00;
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.genre-filter[open] summary::after {
+    transform: rotate(180deg);
+}
+
+/* Стили для выпадающего меню */
+.genre-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 100;
+    margin-top: 5px;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+}
+
+.genre-options a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.genre-options a:hover {
+    background: #ffcc20;
+    color: #000;
+}
+
+.genre-options a.active {
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Анимация открытия */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.genre-filter[open] .genre-options {
+    animation: slideDown 0.3s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .genre-options {
+        top: auto;
+        bottom: 100%;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+/* Пример фильтрации через якоря */
+#rpg:target .game-card:not(.rpg),
+#shooter:target .game-card:not(.shooter) {
+    display: none;
+}
