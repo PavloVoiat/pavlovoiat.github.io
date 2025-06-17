@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaVo - Обо всём в одном месте</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="PaVo Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>PaVo</h1>
+                    <p>Жизнь, игры, хобби, учёба и не только</p>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Поиск...">
+                <button>Найти</button>
+            </div>
+        </div>
+        <!--Навигация-->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="pavoHomepage.html">Главная</a></li>
+                <li><a href="pages/pavoLife.html">Жизнь</a></li>
+                <li><a href="pages/pavoGames.html">Игры</a></li>
+                <li><a href="pages/pavoHobbies.html">Хобби</a></li>
+                <li><a href="pages/pavoStudy.html">Учёба</a></li>
+                <li><a href="pages/pavoAbout.html">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <div class="container">
+            <section class="welcome-section">
+                <h2>Добро пожаловать на PaVo!</h2>
+                <p>Здесь ты найдёшь всё: от лайфхаков до гайдов по играм. Читай, участвуй, обсуждай!</p>
+            </section>
+            <!--Публикации-->
+            <section class="latest-posts">
+                <h2>Последние публикации</h2>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <h3>Топ-5 игр 2024 года</h3>
+                        <p>Обзор самых ожидаемых игр этого года.</p>
+                        <a href="pages/articles/homepage/pavoTop5Games.html" class="read-more">Читать →</a>
+                    </article>
+                    <article class="post-card">
+                        <h3>Как эффективно учиться без стресса</h3>
+                        <p>Проверенные методы для продуктивной учёбы.</p>
+                        <a href="pages/articles/homepage/pavoNoStressStudy.html" class="read-more">Читать →</a>
+                    </article>
+                    <article class="post-card">
+                        <h3>Рисование для начинающих</h3>
+                        <p>С чего начать, если хочешь научиться рисовать.</p>
+                        <a href="pages/articles/homepage/pavoDrawingBeginners.html" class="read-more">Читать →</a>
+                    </article>
+                </div>
+            </section>
+            <!--Темы-->
+            <section class="popular-topics">
+                <h2>Популярные темы</h2>
+                <div class="tags">
+                    <a href="#" class="tag">Киберспорт</a>
+                    <a href="#" class="tag">Продуктивность</a>
+                    <a href="#" class="tag">DIY</a>
+                    <a href="#" class="tag">Книги</a>
+                    <a href="#" class="tag">Образование</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Боковая панель -->
+    <aside class="sidebar">
+        <div class="container">
+            <section class="categories">
+                <h3>Категории</h3>
+                <ul>
+                    <li><a href="#">Жизнь</a></li>
+                    <li><a href="#">Игры</a></li>
+                    <li><a href="#">Хобби</a></li>
+                    <li><a href="#">Учёба</a></li>
+                </ul>
+            </section>
+            <!--Соцсети-->
+            <section class="social-links">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-icons">
+                    <a href="https://t.me/pavlovoiat"><i class="fab fa-telegram"> Telegram</i></a>
+                    <a href="https://www.instagram.com/pavlovoiat"><i class="fab fa-instagram"> Instagram</i></a>
+                    <a href="https://github.com/pavlovoiat"><i class="fab fa-github"> GitHub</i></a>
+                </div>
+            </section>
+        </div>
+    </aside>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>О сайте</h3>
+                    <p>PaVo — место, где собрано всё самое интересное.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Email: voiatpavlo1@gmail.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Подписаться</h3>
+                    <input type="email" placeholder="Ваш email">
+                    <button>Отправить</button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© PaVo, 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
