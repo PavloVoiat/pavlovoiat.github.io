@@ -1,6 +1,0 @@
-permalink: /pavoHomepage.html
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
