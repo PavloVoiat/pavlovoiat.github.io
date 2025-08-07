@@ -1,0 +1,180 @@
+.photo-banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photo-banner h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+}
+
+.photo-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+        
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 280px;
+}
+        
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+        
+.photo-item:hover img {
+transform: scale(1.05);
+}
+        
+.photo-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+        
+.photo-item:hover .photo-meta {
+    transform: translateY(0);
+}
+        
+.gear-list {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+/* Стили для фильтров фотогалереи */
+.photo-filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: #222;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #2a2a2a;
+}
+
+.filter-btn.active {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+.filter-btn.active::after {
+    width: 80%;
+}
+
+/* Стили для списка оборудования */
+.gear-list {
+    background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border: 1px solid #333;
+}
+
+.gear-list h3 {
+    color: #ffcc00;
+    margin: 25px 0 10px;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 25px;
+}
+
+.gear-list h3:first-child {
+    margin-top: 0;
+}
+
+.gear-list h3::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+}
+
+.gear-list p {
+    background-color: rgba(255,255,255,0.05);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border-left: 3px solid #ffcc00;
+    transition: transform 0.3s ease;
+}
+
+.gear-list p:hover {
+    transform: translateX(5px);
+    background-color: rgba(255,204,0,0.1);
+}
+
+/* Анимация для переключения фильтров */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .photo-filters {
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.8em;
+    }
+    
+    .gear-list {
+        padding: 15px;
+    }
+    
+    .gear-list h3 {
+        font-size: 1.1em;
+    }
+}
