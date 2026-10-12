@@ -131,427 +131,421 @@
                 </div>
             </section>
 
-            <!-- Main Content Section -->
-            <main class="space-y-16">
-                <!-- About / Motivation -->
-                <section class="space-y-6">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h2
-                            class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">01.</span> Über mich
-                        </h2>
-                    </div>
-                    <div class="p-4 rounded-xl bg-panel/30 border border-white/5 space-y-2 text-base max-w-4xl">
-                        <p>
-                            Mein Weg in die Softwareentwicklung begann pragmatisch: Da ich keinen eigenen PC hatte,
-                            verwandelte ich mein Android-Tablet via Termux und Arch Linux in eine vollständige
-                            Entwicklungsumgebung. Um im Code-Editor (Acode) effizient zu arbeiten, schrieb ich ein
-                            eigenes Plugin zur Anbindung und optimierte VSCodium.
-                        </p>
-                        <p>
-                            Heute entwickle ich native Android-Apps mit Kotlin & Jetpack Compose, nutze täglich Arch
-                            Linux (Hyprland, Shell-Skripte, systemd-boot) und verwalte meine Projekte strukturiert mit
-                            Git und Conventional Commits.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Interactive Terminal Simulator -->
-                <section id="terminal" class="space-y-6">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h2
-                            class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">02.</span> Interactive CLI
-                        </h2>
-                        <span class="text-xs font-mono text-zinc-500">Tippe <code class="text-emerald-400">help</code>
-                            für Befehle</span>
-                    </div>
-
-                    <!-- Terminal Window Container -->
-                    <div
-                        class="rounded-lg bg-slate-900 border border-slate-800 overflow-hidden code-shadow font-mono text-xs">
-                        <!-- Window Header -->
-                        <div
-                            class="bg-slate-950 px-4 py-2.5 flex items-center justify-between border-b border-slate-800">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
-                                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
-                                <span class="text-zinc-400 text-[11px] ml-2">pavlo@arch:~</span>
-                            </div>
-                            <span class="text-zinc-600 text-[10px]">bash 5.2</span>
-                        </div>
-
-                        <!-- Terminal Body -->
-                        <div id="terminal-body"
-                            class="p-4 space-y-3 h-64 overflow-y-auto text-zinc-300 leading-relaxed">
-                            <div>
-                                <span class="text-emerald-400">pavlo@arch</span>:<span class="text-blue-400">~</span>$
-                                fastfetch
-                                <div
-                                    class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 p-2 bg-slate-950/50 rounded border border-slate-800/50 text-zinc-400">
-                                    <div>
-                                        <span class="text-emerald-400 font-semibold">OS:</span> Arch Linux x86_64<br>
-                                        <span class="text-emerald-400 font-semibold">WM:</span> Hyprland (Wayland)<br>
-                                        <span class="text-emerald-400 font-semibold">Shell:</span> bash with custom
-                                        scripts<br>
-                                        <span class="text-emerald-400 font-semibold">Editor:</span> VSCodium / Neovim
-                                    </div>
-                                    <div>
-                                        <span class="text-emerald-400 font-semibold">Target:</span> Ausbildung FIAE
-                                        (2027)<br>
-                                        <span class="text-emerald-400 font-semibold">School:</span> Sickingen-Gymnasium
-                                        (Kl. 13)<br>
-                                        <span class="text-emerald-400 font-semibold">Main Language:</span> Kotlin, Java,
-                                        Python<br>
-                                        <span class="text-emerald-400 font-semibold">VCS:</span> Git (Conventional
-                                        Commits)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-zinc-500">
-                                Gib <span class="text-emerald-400">help</span>, <span
-                                    class="text-emerald-400">skills</span>, <span
-                                    class="text-emerald-400">projects</span> oder <span
-                                    class="text-emerald-400">clear</span> ein.
-                            </div>
-                        </div>
-
-                        <!-- Input Line -->
-                        <div class="p-3 bg-slate-950/60 border-t border-slate-800/80 flex items-center gap-2">
-                            <span class="text-emerald-400 font-semibold">pavlo@arch:~$</span>
-                            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false"
-                                class="bg-transparent border-none outline-none text-zinc-100 grow font-mono text-xs focus:ring-0 placeholder-zinc-600"
-                                placeholder="Befehl eingeben...">
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Featured Projects -->
-                <section id="projects" class="space-y-6">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h2
-                            class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">03.</span> Ausgewählte Projekte
-                        </h2>
-                        <a href="https://github.com/pavlovoiat" target="_blank"
-                            class="text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1">
-                            github.com/pavlovoiat <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                        </a>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                        <!-- Project 1: Amberoid -->
-                        <div
-                            class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
-                                        <i data-lucide="music" class="w-4 h-4 text-emerald-400"></i> Amberoid
-                                    </h3>
-                                    <a href="https://github.com/pavlovoiat/amberoid" target="_blank"
-                                        class="text-zinc-500 hover:text-zinc-200 transition-colors">
-                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                                    Native, minimalistische Android-Audio-Player-App. Entwickelt für hohe Effizienz,
-                                    klare UI-Architektur und verzögerungsfreie Wiedergabe.
-                                </p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Kotlin</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Jetpack
-                                    Compose</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Android
-                                    SDK</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 2: Mobile Dev Setup & Extensions -->
-                        <div
-                            class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
-                                        <i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Termux Arch
-                                        Ecosystem
-                                    </h3>
-                                    <span
-                                        class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">FOSS</span>
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                                    Eigenes Acode Editor Plugin & Shell-Skripte zur Orchestrierung von VSCodium, Proot
-                                    Arch Linux und Build-Tools auf Android-Hardware.
-                                </p>
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Bash</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">JS
-                                    / Plugin</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Linux
-                                    CLI</span>
-                            </div>
-
-                        </div>
-
-                        <!-- Project 3: Game Dev & 3D Prototyping -->
-                        <div
-                            class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
-                                        <i data-lucide="gamepad-2" class="w-4 h-4 text-emerald-400"></i> Godot & 3D
-                                        Assets
-                                    </h3>
-                                    <span
-                                        class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Gamedev</span>
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                                    Prototyping von Gameplay-Mechaniken mit Godot Engine und Erstellung eigener Low-Poly
-                                    3D-Modelle in Blender.
-                                </p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">GDScript</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">C#</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Blender
-                                    3D</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 4: Java Peer Mentoring -->
-                        <div
-                            class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
-                                        <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i> Java & OOP Tutorium
-                                    </h3>
-                                    <span
-                                        class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Schule</span>
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                                    Unterstützung von Mitschülern am Sickingen-Gymnasium bei objektorientierter
-                                    Programmierung (OOP), Datenstrukturen und Logik.
-                                </p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Java</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">OOP
-                                    Concept</span>
-                                <span
-                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Code
-                                    Reviews</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Technical Skills -->
-                <section id="skills" class="space-y-6">
-
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h2
-                            class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">04.</span> Kenntnisse & Tech Stack
-                        </h2>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-
-                        <!-- Category 1 -->
-                        <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
-                            <div
-                                class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
-                                <i data-lucide="code" class="w-4 h-4"></i> Programmiersprachen
-                            </div>
-                            <ul class="space-y-1.5 text-white">
-                                <li class="flex items-center justify-between"><span>Kotlin</span> <span
-                                        class="text-white/50">Android</span></li>
-                                <li class="flex items-center justify-between"><span>Java</span> <span
-                                        class="text-white/50">OOP / Schule</span></li>
-                                <li class="flex items-center justify-between"><span>Python</span> <span
-                                        class="text-white/50">Scripting</span></li>
-                                <li class="flex items-center justify-between"><span>C / C++</span> <span
-                                        class="text-white/50">Basics</span></li>
-                                <li class="flex items-center justify-between"><span>C#</span> <span
-                                        class="text-white/50">Godot</span></li>
-                                <li class="flex items-center justify-between"><span>JavaScript</span> <span
-                                        class="text-white/50">Node.js</span></li>
-                            </ul>
-                        </div>
-
-                        <!-- Category 2 -->
-                        <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
-                            <div
-                                class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
-                                <i data-lucide="cpu" class="w-4 h-4"></i> OS & Workflows
-                            </div>
-                            <ul class="space-y-1.5 text-white">
-                                <li class="flex items-center justify-between"><span>Arch Linux</span> <span
-                                        class="text-white/50">Main OS</span></li>
-                                <li class="flex items-center justify-between"><span>Hyprland</span> <span
-                                        class="text-white/50">Wayland</span></li>
-                                <li class="flex items-center justify-between"><span>Git</span> <span
-                                        class="text-white/50">Conventional</span></li>
-                                <li class="flex items-center justify-between"><span>Bash / Shell</span> <span
-                                        class="text-white/50">Automation</span></li>
-                                <li class="flex items-center justify-between"><span>Termux / Proot</span> <span
-                                        class="text-white/50">Mobile CLI</span></li>
-                            </ul>
-                        </div>
-
-                        <!-- Category 3 -->
-                        <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
-                            <div
-                                class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
-                                <i data-lucide="box" class="w-4 h-4"></i> Frameworks & Tools
-                            </div>
-                            <ul class="space-y-1.5 text-white">
-                                <li class="flex items-center justify-between"><span>Jetpack Compose</span> <span
-                                        class="text-white/50">Android UI</span></li>
-                                <li class="flex items-center justify-between"><span>Godot Engine</span> <span
-                                        class="text-white/50">Game Dev</span></li>
-                                <li class="flex items-center justify-between"><span>Blender</span> <span
-                                        class="text-white/50">Low-Poly 3D</span></li>
-                                <li class="flex items-center justify-between"><span>VSCodium</span> <span
-                                        class="text-white/50">IDE</span></li>
-                                <li class="flex items-center justify-between"><span>Syncthing</span> <span
-                                        class="text-white/50">FOSS Sync</span></li>
-                            </ul>
-                        </div>
-
-                        <!-- Category 4 -->
-                        <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
-                            <div
-                                class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
-                                <i data-lucide="globe" class="w-4 h-4"></i> Sprachen
-                            </div>
-                            <ul class="space-y-1.5 text-white">
-                                <li class="flex items-center justify-between"><span>Deutsch</span> <span
-                                        class="text-white/50">Verhandlungssicher</span></li>
-                                <li class="flex items-center justify-between"><span>Englisch</span> <span
-                                        class="text-white/50">Verhandlungssicher</span></li>
-                                <li class="flex items-center justify-between"><span>Russisch</span> <span
-                                        class="text-white/50">Muttersprachliches Niveau</span></li>
-                                <li class="flex items-center justify-between"><span>Ukrainisch</span> <span
-                                        class="text-white/50">Muttersprache</span></li>
-                                <li class="flex items-center justify-between"><span>Spanisch</span> <span
-                                        class="text-white/50">Basics</span></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Education Pathway -->
-                <section class="space-y-6">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <h2
-                            class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">05.</span> Bildungsweg
-                        </h2>
-                    </div>
-
-                    <div class="relative border-l border-slate-800 ml-3 space-y-8">
-                        <!-- Sickingen Gymnasium -->
-                        <div class="relative pl-6">
-                            <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-emerald-400"></span>
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                                <span class="text-sm font-semibold text-white">Sickingen-Gymnasium Landstuhl</span>
-                                <span class="font-mono text-xs text-emerald-400">08/2022 — Gegenwart</span>
-                            </div>
-                            <p class="text-xs text-slate-400 mt-1">
-                                Gymnasiale Oberstufe (Klasse 13) &bull; Angestrebter Abschluss: Schulischer Teil der
-                                Fachhochschulreife / Abitur
-                            </p>
-                            <p class="text-xs text-slate-500 mt-1">
-                                &bull; Mitschüler-Mentor: Unterstützung von Mitschülern bei komplexen
-                                Programmieraufgaben in Java (OOP).<br>
-                                &bull; Klasse 9: Integration und intensiver Spracherwerb im Rahmen des DaZ-Kurses
-                                (Deutsch als Zweitsprache).
-                            </p>
-                        </div>
-
-                        <!-- Informatik Biber -->
-                        <div class="relative pl-6">
-                            <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                                <span class="text-sm font-semibold text-white">Wettbewerb Informatik-Biber</span>
-                                <span class="font-mono text-xs text-slate-500">2024 — 2025</span>
-                            </div>
-                            <p class="text-xs text-slate-400 mt-1">Erfolgreiche Teilnahme und Auszeichnung mit
-                                Zertifikaten.</p>
-                        </div>
-
-                        <!-- Praktikum -->
-                        <div class="relative pl-6">
-                            <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                                <span class="text-sm font-semibold text-white">Sozialpraktikum — Ökumenisches
-                                    Gemeinschaftswerk</span>
-                                <span class="font-mono text-xs text-slate-500">02/2024</span>
-                            </div>
-                            <p class="text-xs text-slate-400 mt-1">
-                                Zweiwöchiges Vollzeitpraktikum (80 Stunden) zur Betreuung von Menschen mit Behinderung.
-                                Stärkung von Teamfähigkeit, Verlässlichkeit und Empathie.
-                            </p>
-                        </div>
-
-                        <!-- Realschule -->
-                        <div class="relative pl-6">
-                            <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                                <span class="text-sm font-semibold text-white">Adam-Müller-Schule (Realschule
-                                    plus)</span>
-                                <span class="font-mono text-xs text-slate-500">05/2022 — 07/2022</span>
-                            </div>
-                            <p class="text-xs text-slate-400 mt-1">Wechsel an das Gymnasium nach zwei Monaten auf
-                                Empfehlung der Lehrkräfte.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact CTA -->
-                <section
-                    class="p-8 rounded-2xl bg-linear-to-b from-panel to-bg border border-white/10 text-center space-y-4">
-                    <h2 class="text-xl font-bold text-white">Interesse an einem Erstgespräch?</h2>
-                    <p class="text-sm text-slate-400 max-w-md mx-auto">
-                        Ich suche einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung ab 2027.
-                        Schreiben Sie mir gerne eine E-Mail!
+            <!-- About / Motivation -->
+            <section class="space-y-6">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                    <h2
+                        class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
+                        <span class="text-emerald-400">01.</span> Über mich
+                    </h2>
+                </div>
+                <div class="p-4 rounded-xl bg-panel/30 border border-white/5 space-y-2 text-base max-w-4xl">
+                    <p>
+                        Mein Weg in die Softwareentwicklung begann pragmatisch: Da ich keinen eigenen PC hatte,
+                        verwandelte ich mein Android-Tablet via Termux und Arch Linux in eine vollständige
+                        Entwicklungsumgebung. Um im Code-Editor (Acode) effizient zu arbeiten, schrieb ich ein
+                        eigenes Plugin zur Anbindung und optimierte VSCodium.
                     </p>
-                    <div class="pt-2">
-                        <a href="mailto:voiatpavlo1@gmail.com"
-                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 text-black font-mono font-semibold text-xs hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/10">
-                            <span>voiatpavlo1@gmail.com</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </section>
+                    <p>
+                        Heute entwickle ich native Android-Apps mit Kotlin & Jetpack Compose, nutze täglich Arch
+                        Linux (Hyprland, Shell-Skripte, systemd-boot) und verwalte meine Projekte strukturiert mit
+                        Git und Conventional Commits.
+                    </p>
+                </div>
+            </section>
 
-            </main>
+            <!-- Interactive Terminal Simulator -->
+            <section id="terminal" class="space-y-6">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                    <h2
+                        class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
+                        <span class="text-emerald-400">02.</span> Interactive CLI
+                    </h2>
+                    <span class="text-xs font-mono text-zinc-500">Tippe <code class="text-emerald-400">help</code>
+                        für Befehle</span>
+                </div>
+
+                <!-- Terminal Window Container -->
+                <div
+                    class="rounded-lg bg-slate-900 border border-slate-800 overflow-hidden code-shadow font-mono text-xs">
+                    <!-- Window Header -->
+                    <div class="bg-slate-950 px-4 py-2.5 flex items-center justify-between border-b border-slate-800">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                            <span class="text-zinc-400 text-[11px] ml-2">pavlo@arch:~</span>
+                        </div>
+                        <span class="text-zinc-600 text-[10px]">bash 5.2</span>
+                    </div>
+
+                    <!-- Terminal Body -->
+                    <div id="terminal-body" class="p-4 space-y-3 h-64 overflow-y-auto text-zinc-300 leading-relaxed">
+                        <div>
+                            <span class="text-emerald-400">pavlo@arch</span>:<span class="text-blue-400">~</span>$
+                            fastfetch
+                            <div
+                                class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 p-2 bg-slate-950/50 rounded border border-slate-800/50 text-zinc-400">
+                                <div>
+                                    <span class="text-emerald-400 font-semibold">OS:</span> Arch Linux x86_64<br>
+                                    <span class="text-emerald-400 font-semibold">WM:</span> Hyprland (Wayland)<br>
+                                    <span class="text-emerald-400 font-semibold">Shell:</span> bash with custom
+                                    scripts<br>
+                                    <span class="text-emerald-400 font-semibold">Editor:</span> VSCodium / Neovim
+                                </div>
+                                <div>
+                                    <span class="text-emerald-400 font-semibold">Target:</span> Ausbildung FIAE
+                                    (2027)<br>
+                                    <span class="text-emerald-400 font-semibold">School:</span> Sickingen-Gymnasium
+                                    (Kl. 13)<br>
+                                    <span class="text-emerald-400 font-semibold">Main Language:</span> Kotlin, Java,
+                                    Python<br>
+                                    <span class="text-emerald-400 font-semibold">VCS:</span> Git (Conventional
+                                    Commits)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-zinc-500">
+                            Gib <span class="text-emerald-400">help</span>, <span
+                                class="text-emerald-400">skills</span>, <span class="text-emerald-400">projects</span>
+                            oder <span class="text-emerald-400">clear</span> ein.
+                        </div>
+                    </div>
+
+                    <!-- Input Line -->
+                    <div class="p-3 bg-slate-950/60 border-t border-slate-800/80 flex items-center gap-2">
+                        <span class="text-emerald-400 font-semibold">pavlo@arch:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false"
+                            class="bg-transparent border-none outline-none text-zinc-100 grow font-mono text-xs focus:ring-0 placeholder-zinc-600"
+                            placeholder="Befehl eingeben...">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section id="projects" class="space-y-6">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                    <h2
+                        class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
+                        <span class="text-emerald-400">03.</span> Ausgewählte Projekte
+                    </h2>
+                    <a href="https://github.com/pavlovoiat" target="_blank"
+                        class="text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1">
+                        github.com/pavlovoiat <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                    <!-- Project 1: Amberoid -->
+                    <div
+                        class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
+                                    <i data-lucide="music" class="w-4 h-4 text-emerald-400"></i> Amberoid
+                                </h3>
+                                <a href="https://github.com/pavlovoiat/amberoid" target="_blank"
+                                    class="text-zinc-500 hover:text-zinc-200 transition-colors">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                Native, minimalistische Android-Audio-Player-App. Entwickelt für hohe Effizienz,
+                                klare UI-Architektur und verzögerungsfreie Wiedergabe.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Kotlin</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Jetpack
+                                Compose</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Android
+                                SDK</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Mobile Dev Setup & Extensions -->
+                    <div
+                        class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
+                                    <i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Termux Arch
+                                    Ecosystem
+                                </h3>
+                                <span
+                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">FOSS</span>
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                Eigenes Acode Editor Plugin & Shell-Skripte zur Orchestrierung von VSCodium, Proot
+                                Arch Linux und Build-Tools auf Android-Hardware.
+                            </p>
+                        </div>
+
+
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Bash</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">JS
+                                / Plugin</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Linux
+                                CLI</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Project 3: Game Dev & 3D Prototyping -->
+                    <div
+                        class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
+                                    <i data-lucide="gamepad-2" class="w-4 h-4 text-emerald-400"></i> Godot & 3D
+                                    Assets
+                                </h3>
+                                <span
+                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Gamedev</span>
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                Prototyping von Gameplay-Mechaniken mit Godot Engine und Erstellung eigener Low-Poly
+                                3D-Modelle in Blender.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">GDScript</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">C#</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Blender
+                                3D</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Java Peer Mentoring -->
+                    <div
+                        class="bg-panel/40 border border-white/10 rounded-xl p-6 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-4 duration-300">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-mono text-base font-semibold text-zinc-100 flex items-center gap-2">
+                                    <i data-lucide="users" class="w-4 h-4 text-emerald-400"></i> Java & OOP Tutorium
+                                </h3>
+                                <span
+                                    class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Schule</span>
+                            </div>
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                                Unterstützung von Mitschülern am Sickingen-Gymnasium bei objektorientierter
+                                Programmierung (OOP), Datenstrukturen und Logik.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-zinc-400">
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Java</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">OOP
+                                Concept</span>
+                            <span
+                                class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-400 w-fit">Code
+                                Reviews</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section id="skills" class="space-y-6">
+
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                    <h2
+                        class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
+                        <span class="text-emerald-400">04.</span> Kenntnisse & Tech Stack
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+
+                    <!-- Category 1 -->
+                    <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
+                        <div
+                            class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
+                            <i data-lucide="code" class="w-4 h-4"></i> Programmiersprachen
+                        </div>
+                        <ul class="space-y-1.5 text-white">
+                            <li class="flex items-center justify-between"><span>Kotlin</span> <span
+                                    class="text-white/50">Android</span></li>
+                            <li class="flex items-center justify-between"><span>Java</span> <span
+                                    class="text-white/50">OOP / Schule</span></li>
+                            <li class="flex items-center justify-between"><span>Python</span> <span
+                                    class="text-white/50">Scripting</span></li>
+                            <li class="flex items-center justify-between"><span>C / C++</span> <span
+                                    class="text-white/50">Basics</span></li>
+                            <li class="flex items-center justify-between"><span>C#</span> <span
+                                    class="text-white/50">Godot</span></li>
+                            <li class="flex items-center justify-between"><span>JavaScript</span> <span
+                                    class="text-white/50">Node.js</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
+                        <div
+                            class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
+                            <i data-lucide="cpu" class="w-4 h-4"></i> OS & Workflows
+                        </div>
+                        <ul class="space-y-1.5 text-white">
+                            <li class="flex items-center justify-between"><span>Arch Linux</span> <span
+                                    class="text-white/50">Main OS</span></li>
+                            <li class="flex items-center justify-between"><span>Hyprland</span> <span
+                                    class="text-white/50">Wayland</span></li>
+                            <li class="flex items-center justify-between"><span>Git</span> <span
+                                    class="text-white/50">Conventional</span></li>
+                            <li class="flex items-center justify-between"><span>Bash / Shell</span> <span
+                                    class="text-white/50">Automation</span></li>
+                            <li class="flex items-center justify-between"><span>Termux / Proot</span> <span
+                                    class="text-white/50">Mobile CLI</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
+                        <div
+                            class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
+                            <i data-lucide="box" class="w-4 h-4"></i> Frameworks & Tools
+                        </div>
+                        <ul class="space-y-1.5 text-white">
+                            <li class="flex items-center justify-between"><span>Jetpack Compose</span> <span
+                                    class="text-white/50">Android UI</span></li>
+                            <li class="flex items-center justify-between"><span>Godot Engine</span> <span
+                                    class="text-white/50">Game Dev</span></li>
+                            <li class="flex items-center justify-between"><span>Blender</span> <span
+                                    class="text-white/50">Low-Poly 3D</span></li>
+                            <li class="flex items-center justify-between"><span>VSCodium</span> <span
+                                    class="text-white/50">IDE</span></li>
+                            <li class="flex items-center justify-between"><span>Syncthing</span> <span
+                                    class="text-white/50">FOSS Sync</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="bg-panel/30 border border-white/5 rounded-xl p-4 space-y-2">
+                        <div
+                            class="text-emerald-400 font-semibold flex items-center gap-1.5 border-b border-white/20 pb-2">
+                            <i data-lucide="globe" class="w-4 h-4"></i> Sprachen
+                        </div>
+                        <ul class="space-y-1.5 text-white">
+                            <li class="flex items-center justify-between"><span>Deutsch</span> <span
+                                    class="text-white/50">Verhandlungssicher</span></li>
+                            <li class="flex items-center justify-between"><span>Englisch</span> <span
+                                    class="text-white/50">Verhandlungssicher</span></li>
+                            <li class="flex items-center justify-between"><span>Russisch</span> <span
+                                    class="text-white/50">Muttersprachliches Niveau</span></li>
+                            <li class="flex items-center justify-between"><span>Ukrainisch</span> <span
+                                    class="text-white/50">Muttersprache</span></li>
+                            <li class="flex items-center justify-between"><span>Spanisch</span> <span
+                                    class="text-white/50">Basics</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Education Pathway -->
+            <section class="space-y-6">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                    <h2
+                        class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold flex items-center gap-2">
+                        <span class="text-emerald-400">05.</span> Bildungsweg
+                    </h2>
+                </div>
+
+                <div class="relative border-l border-slate-800 ml-3 space-y-8">
+                    <!-- Sickingen Gymnasium -->
+                    <div class="relative pl-6">
+                        <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-emerald-400"></span>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-sm font-semibold text-white">Sickingen-Gymnasium Landstuhl</span>
+                            <span class="font-mono text-xs text-emerald-400">08/2022 — Gegenwart</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">
+                            Gymnasiale Oberstufe (Klasse 13) &bull; Angestrebter Abschluss: Schulischer Teil der
+                            Fachhochschulreife / Abitur
+                        </p>
+                        <p class="text-xs text-slate-500 mt-1">
+                            &bull; Mitschüler-Mentor: Unterstützung von Mitschülern bei komplexen
+                            Programmieraufgaben in Java (OOP).<br>
+                            &bull; Klasse 9: Integration und intensiver Spracherwerb im Rahmen des DaZ-Kurses
+                            (Deutsch als Zweitsprache).
+                        </p>
+                    </div>
+
+                    <!-- Informatik Biber -->
+                    <div class="relative pl-6">
+                        <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-sm font-semibold text-white">Wettbewerb Informatik-Biber</span>
+                            <span class="font-mono text-xs text-slate-500">2024 — 2025</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">Erfolgreiche Teilnahme und Auszeichnung mit
+                            Zertifikaten.</p>
+                    </div>
+
+                    <!-- Praktikum -->
+                    <div class="relative pl-6">
+                        <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-sm font-semibold text-white">Sozialpraktikum — Ökumenisches
+                                Gemeinschaftswerk</span>
+                            <span class="font-mono text-xs text-slate-500">02/2024</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">
+                            Zweiwöchiges Vollzeitpraktikum (80 Stunden) zur Betreuung von Menschen mit Behinderung.
+                            Stärkung von Teamfähigkeit, Verlässlichkeit und Empathie.
+                        </p>
+                    </div>
+
+                    <!-- Realschule -->
+                    <div class="relative pl-6">
+                        <span class="absolute -left-1.25 top-1.5 w-2 h-2 rounded-full bg-slate-700"></span>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-sm font-semibold text-white">Adam-Müller-Schule (Realschule
+                                plus)</span>
+                            <span class="font-mono text-xs text-slate-500">05/2022 — 07/2022</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">Wechsel an das Gymnasium nach zwei Monaten auf
+                            Empfehlung der Lehrkräfte.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section
+                class="p-8 rounded-2xl bg-linear-to-b from-panel to-bg border border-white/10 text-center space-y-4">
+                <h2 class="text-xl font-bold text-white">Interesse an einem Erstgespräch?</h2>
+                <p class="text-sm text-slate-400 max-w-md mx-auto">
+                    Ich suche einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung ab 2027.
+                    Schreiben Sie mir gerne eine E-Mail!
+                </p>
+                <div class="pt-2">
+                    <a href="mailto:voiatpavlo1@gmail.com"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 text-black font-mono font-semibold text-xs hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/10">
+                        <span>voiatpavlo1@gmail.com</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </section>
+
         </main>
 
         <footer class="mt-20 pt-8 border-t border-white/5 text-center font-mono text-xs text-slate-600">
